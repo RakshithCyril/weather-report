@@ -9,5 +9,5 @@ app.get('/',(req,res)=>{
     res.send('hesdfy')
 })
 app.listen(port,()=>{
-    console.log('listening')
+    console.log(`listening ${port}`)
 })
