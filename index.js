@@ -13,7 +13,7 @@ const newspapers = [
     {
      name:'thetimes',
      address:'https://www.thetimes.co.uk/environment/climate-change',
-     base:""
+     base:"https://climate01.herokuapp.com/thetimes"
 },
 {
     name:'guardian',
@@ -23,7 +23,7 @@ const newspapers = [
 {
     name:'telegraph',
     address:'https://www.telegraph.co.uk/climate-change',
-    base:'https://www.telegraph.co.uk'
+    base:'https://climate01.herokuapp.com/guardian/telegraph'
 },
 ]
 const articles =[]
