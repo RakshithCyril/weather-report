@@ -67,7 +67,7 @@ app.get('/',(req,res)=>{
                 const url = $(this).attr('href')
                 spec.push({
                     title,
-                    url : base + url,
+                    url :  url,
                     source:newspaperId
                 })
             })
