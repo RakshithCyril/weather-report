@@ -36,11 +36,13 @@ newspapers.forEach(newspaper =>{
         $('a:contains("climate")',html).each(function (){
             const title = $(this).text()
             const url = $(this).attr('href')
+            const base = newspaper.base
 
             articles.push({
                 title,
                 url:  url,
                 source: newspaper.name,
+                base:newspaper.base
             })
         })
     })
