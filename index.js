@@ -39,7 +39,7 @@ newspapers.forEach(newspaper =>{
 
             articles.push({
                 title,
-                url: newspaper.base + url,
+                url:  url,
                 source: newspaper.name,
             })
         })
