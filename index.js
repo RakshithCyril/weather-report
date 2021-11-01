@@ -78,5 +78,5 @@ app.get('/',(req,res)=>{
         })
     })
 app.listen(port,()=>{
-    console.log(`listeniefng ${port}`)
+    console.log(`listening ${port}`)
 })
