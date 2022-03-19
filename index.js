@@ -6,8 +6,13 @@ dot.config()
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
+const cors = require('cors')
 const cheerio = require('cheerio')
 const axios = require('axios')
+const corsOption = {
+    origin : 'localhost:8080',
+    optionSuccessStatus : 200
+}
 
 const newspapers = [
     {
@@ -52,7 +57,7 @@ newspapers.forEach(newspaper =>{
 // app.get('/',(req,res)=>{
 //     res.json('welcome')
 // })
-app.get('/',(req,res)=>{
+app.get('/',cors(corsOption), (req,res)=>{
     res.json(articles)
     })
     app.get('/:newspaperId',async(req,res)=>{
